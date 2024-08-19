@@ -1,4 +1,4 @@
-package com.aarash.demo.controller.service;
+package com.aarash.demo.service;
 
 import com.aarash.demo.dto.LoginResponse;
 import com.aarash.demo.dto.UserLoginDto;
@@ -16,11 +16,8 @@ import org.springframework.beans.BeanUtils;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContext;
 import org.springframework.security.core.context.SecurityContextHolder;
-import org.springframework.security.oauth2.server.resource.authentication.JwtAuthenticationToken;
 import org.springframework.stereotype.Service;
 
-import java.security.Principal;
-import java.util.Optional;
 import java.util.UUID;
 
 @Service

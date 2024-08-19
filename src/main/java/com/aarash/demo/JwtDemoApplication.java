@@ -1,7 +1,6 @@
 package com.aarash.demo;
 
-import com.aarash.demo.controller.UserController;
-import com.aarash.demo.controller.service.UserService;
+import com.aarash.demo.service.UserService;
 import com.aarash.demo.dto.UserRegisterDto;
 import com.aarash.demo.model.UserRole;
 import org.springframework.beans.factory.annotation.Autowired;

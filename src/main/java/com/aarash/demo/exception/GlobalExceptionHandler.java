@@ -27,13 +27,6 @@ public class GlobalExceptionHandler {
         return ProblemDetail.forStatusAndDetail(HttpStatus.UNAUTHORIZED, e.getMessage());
     }
 
-//    @ExceptionHandler(ConstraintViolationException.class)
-//    public ProblemDetail handleConstraintViolationException(ConstraintViolationException e) {
-//        log.error("inside global exception handler. error message : {}", e.getMessage());
-//        e.printStackTrace();
-//        return ProblemDetail.forStatusAndDetail(HttpStatus.BAD_REQUEST, e.getMessage());
-//    }
-
     @ExceptionHandler(MethodArgumentNotValidException.class)
     public ProblemDetail handleMethodArgumentNotValidException(MethodArgumentNotValidException e) {
         log.error("inside global exception handler. error message : {}", e.getMessage());

@@ -1,6 +1,6 @@
 package com.aarash.demo.controller;
 
-import com.aarash.demo.controller.service.UserService;
+import com.aarash.demo.service.UserService;
 import com.aarash.demo.dto.LoginResponse;
 import com.aarash.demo.dto.UserLoginDto;
 import com.aarash.demo.dto.UserPasswordDto;
@@ -8,13 +8,9 @@ import com.aarash.demo.dto.UserRegisterDto;
 import com.aarash.demo.model.Users;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.security.access.prepost.PostAuthorize;
 import org.springframework.security.access.prepost.PreAuthorize;
-import org.springframework.security.core.Authentication;
-import org.springframework.security.oauth2.server.resource.authentication.JwtAuthenticationToken;
 import org.springframework.web.bind.annotation.*;
 
-import java.security.Principal;
 import java.util.UUID;
 
 @RestController

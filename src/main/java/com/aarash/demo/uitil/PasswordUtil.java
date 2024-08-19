@@ -1,6 +1,5 @@
 package com.aarash.demo.uitil;
 
-import com.aarash.demo.dto.UserRegisterDto;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Component;
